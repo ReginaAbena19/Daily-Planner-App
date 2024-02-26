@@ -11,52 +11,18 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Work Day Scheduler</title>
+  <title> Planner</title>
 </head>
 
 <body>
   <header>
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <h1 class="display-3">My Daily planner</h1>
+    <p class="lead">A simple calendar app for scheduling my daily tasks</p>
     <p id="currentDay" class="lead"></p>
   </header>
-  <div class="container">
-    <!-- Timeblocks go here -->
-    <div class="row time-block">
-      <div
-        class="col-2 hour d-flex justify-content-center align-items-center"
-      >
-        9 AM
-      </div>
-      <textarea class="col-8 description"></textarea>
-      <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-      <div
-        class="col-2 hour d-flex justify-content-center align-items-center"
-      >
-        10 AM
-      </div>
-      <textarea class="col-8 description"></textarea>
-      <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-    </div>
-  </div>
-    </div>
-    <ul id="sortable">
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>9am</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>10am</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>11am</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>12pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>1pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>2pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>3pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>4pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>5pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>6pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>7pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>8pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>9pm</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>10pm</li>
-    </ul>
-  </div>
+
+ <!-- Timeblocks go here -->
+  <div class="container" id="timeBlockContainer"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <script src="./src/index.js"></script>
