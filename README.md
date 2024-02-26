@@ -34,5 +34,7 @@ The following animation demonstrates the application functionality:
 
 ![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
 
-## Deployment
-Deployed link here: https://reginaabena19.github.io/Daily-Planner-App/
+## Installation
+The challenge is deployed using Github Pages. The end result can be found here: https://reginaabena19.github.io/Daily-Planner-App/
+
+When viewing through the editor ensure live server is installed in order to run the index.html file in the browser.
