@@ -19,7 +19,9 @@ for (let hour = 9; hour <= 17; hour++) {
 
 // Saving daily tasks to local storage
 
-$(".saveBtn").on("click", function(event){
+const saveButton = $(".saveBtn")
+
+saveButton.on("click", function(event){
   event.preventDefault();
 
   let dailyTask = $(this).prev().val();
