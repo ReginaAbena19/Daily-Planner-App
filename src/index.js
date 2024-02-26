@@ -8,7 +8,7 @@ const currentTime = (dayjs().hour());
 $(".saveBtn").on("click", function(event){
   event.preventDefault();
 
-  let dailyTask = $(this).prev.val();
+  let dailyTask = $(this).prev().val();
 
   let timeBlock = $(this).attr("time-stamp");
 
@@ -16,7 +16,7 @@ $(".saveBtn").on("click", function(event){
 });
 
 // Dynamically Generate time blocks
-for (let hour = 9; hour <= 17; hour++) {
+for (let hour = 9; hour <= 20; hour++) {
   $("#timeBlockContainer").append(`
     <div class="row time-block">
       <div class="col-2 hour d-flex justify-content-center align-items-center">
@@ -29,7 +29,7 @@ for (let hour = 9; hour <= 17; hour++) {
 }
 
 // Display user inputs into time blocks:
-for (let hour = 9; hour <= 17; hour++) {
+for (let hour = 9; hour <= 20; hour++) {
   $(`#dailyTask${hour}`).val(localStorage.getItem(hour.toString()));
 }
 
