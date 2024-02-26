@@ -3,17 +3,6 @@ $("#currentDay").text(dayjs().format("dddd[,] MMMM DD HH:mm"));
 
 const currentTime = (dayjs().hour());
 
-// Saving daily tasks to local storage
-
-$(".saveBtn").on("click", function(event){
-  event.preventDefault();
-
-  let dailyTask = $(this).prev().val();
-
-  let timeBlock = $(this).attr("time-stamp");
-
-  localStorage.setItem(timeBlock, dailyTask);
-});
 
 // Dynamically Generate time blocks
 for (let hour = 9; hour <= 17; hour++) {
@@ -27,6 +16,19 @@ for (let hour = 9; hour <= 17; hour++) {
     </div>
   `);
 }
+
+// Saving daily tasks to local storage
+
+$(".saveBtn").on("click", function(event){
+  event.preventDefault();
+
+  let dailyTask = $(this).prev().val();
+
+  let timeBlock = $(this).attr("time-stamp");
+
+  localStorage.setItem(timeBlock, dailyTask);
+  
+});
 
 // Display user inputs into time blocks:
 for (let hour = 9; hour <= 17; hour++) {
